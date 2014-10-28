@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <link rel="stylesheet" href="css/normalize.css">
+		<link type="text/css" href="css/style.css" rel="stylesheet"/>
+
+		<title>Curve-Edit :: A tool..</title>
+
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<!--         <script src="../sandbox/bower_components/jquery/dist/jquery.js"></script> -->
+<!--         <script src="../sandbox/bower_components/mousetrap/mousetrap.js"></script> -->
+<!--         <script src="../sandbox/bower_components/d3/d3.js"></script> -->
+
+<!--         <script src="bower_components/underscore/underscore.js"></script> -->
+        <script src="js/main.js"></script>
+
+	</head>
+
+	<body>
+
+	  <div class='menu'>
+	  	<div class='Eq'></div>
+	  	<select class='Eqs'></select>
+	  	<select class='States'></select>
+	    <div class="slider">
+	      <input min="-10" max="10" value="1" id='slider1' type="range">
+	    </div>
+	    <div class="slider">
+	      <input min="-8" max="8" value="1" id='slider2' type="range">
+	    </div>
+	    <div class="slider">
+	      <input min="-10" max="10" value="1" id='slider3' type="range">
+	    </div>
+	    <div class="slider">
+	      <input min="-10" max="10" value="1" id='slider4' type="range">
+	    </div>
+	    <div class="slider">
+	      <input min="-10" max="10" value="1" id='slider5' type="range">
+	    </div>
+	    <div class="slider">
+	      <input min="0" max="30" value="15" id='slider6' type="range">
+	    </div>
+	    From _ to _ Radians <br />
+	    Scale It<br />
+	  	CSS Keyframe Animations : <select class='css-animations'>
+	  		<option value='on'>on</option>
+	  		<option value='off'>off</option>	  		
+	  	</select><br />
+	  	SVG Stroke-Dasharray : <select class='stroke-dasharray'>
+	  		<option value='on'>on</option>
+	  		<option value='off'>off</option>	  		
+	  	</select><br />
+	  	SVG Stroke-Dashoffset : <select class='stroke-dashoffset'>
+	  		<option value='on'>on</option>
+	  		<option value='off'>off</option>
+	  	</select><br />
+	  	BG Color / Stroke Color<br />
+	  	Toggle Grids<br />
+	  	Export Options
+	  </div>
+
+
+	</body>
+</html>
