@@ -5,7 +5,9 @@
 // http://bl.ocks.org/mbostock/4583749
 // https://en.wikipedia.org/wiki/Butterfly_curve_(transcendental)
 // http://calculus-geometry.hubpages.com/hub/Butterfly-Curves-in-Polar-Coordinates-on-a-Graphing-Calculator
-	
+
+// http://jsfiddle.net/russelluresti/RHhBz/3/ -- modify existing css keyframe
+
 	var Eq = [2,4,2,24,5,20];
 
 	var data = {
@@ -395,6 +397,8 @@
 		$('.stroke-dasharray').on('change', function() {  }); 
 		$('.stroke-dashoffset').on('change', function() {  }); 
 
+		$('#dasharray-value').on('change', h.dasharrayValue); 
+
 		// update on window resize
 		window.onresize = function(event) {};
 		$(document).on('webkitfullscreenchange mozfullscreenchange fullscreenchange',h.resize);
@@ -541,6 +545,22 @@
 
 	// helper methods ///////////////////////////////////////////////////////////////////////////////
 	var h = {};
+	h.dasharrayValue = function() {
+
+		var s = this.value;
+
+		$('.line').attr('style','stroke-dasharray: '+this.value);
+
+		var array = s.split(' ');
+		var sum = d3.sum(array);
+		console.log(sum);
+
+pump length 1s
+easing
+stroke-width
+*/
+
+		};
 	h.sanitize = function(Arr) {
 		for (var i = 0; i < Arr.length; i++) {
 			Arr[i] = Arr[i] || 0; 

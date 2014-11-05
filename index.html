@@ -23,6 +23,8 @@
 	  	<div class='Eq'></div>
 	  	<select class='Eqs'></select>
 	  	<select class='States'></select>
+	  	<br />
+	  	Coefficients
 	    <div class="slider">
 	      <input min="-10" max="10" value="1" id='slider1' type="range">
 	    </div>
@@ -41,12 +43,43 @@
 	    <div class="slider">
 	      <input min="0" max="30" value="15" id='slider6' type="range">
 	    </div>
-	    From _ to _ Radians <br />
-	    Scale It<br />
+	    Stroke Dasharray Value: <input id='dasharray-value' type='text' /><br />
+	    Animation Duration: <input id='animation-length' type='text' /><br />
+	    Easing: <select class='css-easing'>
+	  		<option value='ease'>ease</option>
+	  		<option value='ease-in'>ease-in</option>	  		
+	  		<option value='linear'>linear</option>	  		
+	  	</select><br />
+
+	    Stroke Width:
+	    <div class="slider">
+	      <input min="0" max="30" value="15" id='slider-stroke' type="range">
+	    </div>
+
+	    From _ to _ Radians
+	    <div class="slider">
+	      <input min="0" max="30" value="15" id='slider6' type="range">
+	    </div>
+
+	    (CSS3 Transform)<br />
+
+	    Hard Scale<br />
+	    <div class="slider">
+	      <input min="0" max="30" value="15" id='slider6' type="range">
+	    </div>
+
+	    Translate<br />
+	    <div class="slider">
+	      <input min="0" max="30" value="15" id='slider6' type="range">
+	      <input min="0" max="30" value="15" id='slider6' type="range">
+	    </div>
 	  	CSS Keyframe Animations : <select class='css-animations'>
 	  		<option value='on'>on</option>
 	  		<option value='off'>off</option>	  		
 	  	</select><br />
+
+	  	(SVG's Dash)
+
 	  	SVG Stroke-Dasharray : <select class='stroke-dasharray'>
 	  		<option value='on'>on</option>
 	  		<option value='off'>off</option>	  		
@@ -55,9 +88,10 @@
 	  		<option value='on'>on</option>
 	  		<option value='off'>off</option>
 	  	</select><br />
-	  	BG Color / Stroke Color<br />
+	  	
+	  	BG Color / Stroke Color<br /> wysiwyg+premade
 	  	Toggle Grids<br />
-	  	Export Options
+	  	Export Options<br /> (as svg+css), as json, as png, embed, deep linking)
 	  </div>
 
 
